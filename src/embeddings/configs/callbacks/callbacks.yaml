@@ -1,0 +1,15 @@
+early_stopping:
+  class_name: pl.callbacks.EarlyStopping
+  params:
+    monitor: ${training.metric}
+    patience: 8
+    mode: ${training.mode}
+
+model_checkpoint:
+  class_name: pl.callbacks.ModelCheckpoint
+  params:
+    monitor: ${training.metric}
+    save_top_k: 5
+    dirpath: saved_models/
+    filename: ${model.backbone.name}_{epoch:02d}-{val_rmap:.4f}-{val_loss:.4f}
+    mode: ${training.mode}

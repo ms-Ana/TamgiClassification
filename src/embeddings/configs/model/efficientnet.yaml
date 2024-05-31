@@ -1,0 +1,7 @@
+backbone:
+  name: efficientnet
+  class_name: torchvision.models.efficientnet_b0
+  params:
+    weights: DEFAULT
+    freeze_up_to: -3
+    embedding_num: 512

@@ -1,0 +1,7 @@
+backbone:
+  name: mobilenet
+  class_name: torchvision.models.mobilenet_v2
+  params:
+    weights: DEFAULT
+    freeze_up_to: -3
+    embedding_num: 512

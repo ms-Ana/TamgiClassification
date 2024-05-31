@@ -1,0 +1,13 @@
+cython
+fairscale
+imagecorruptions
+matplotlib
+numpy
+numpy
+pycocotools
+scikit-learn
+scipy
+shapely
+six
+terminaltables
+tqdm

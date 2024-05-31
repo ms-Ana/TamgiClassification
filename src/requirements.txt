@@ -1,0 +1,6 @@
+torch==2.1.0
+openmim>=0.3.9
+mmengine>=0.10.4
+mmcv==2.2.0 -f https://download.openmmlab.com/mmcv/dist/cu121/torch2.1/index.html
+setuptools==69.5.1
+qdrant-client>=1.9.1

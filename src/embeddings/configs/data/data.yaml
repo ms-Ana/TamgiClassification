@@ -1,0 +1,11 @@
+image_dir: /home/ana/University/Tamgi/data/dataset/crop
+train_path: /home/ana/University/Tamgi/data/dataset/crop_labels/train.csv
+val_path: /home/ana/University/Tamgi/data/dataset/crop_labels/val.csv
+test_path: /home/ana/University/Tamgi/data/dataset/crop_labels/test.csv
+
+
+
+width: 299
+height: 299
+batch_size: 128
+num_workers: 12

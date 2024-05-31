@@ -1,0 +1,6 @@
+name: triplet
+class_name: utils.TripletLoss
+params:
+  device: cuda
+  margin: 0.9
+  triplet_type: all

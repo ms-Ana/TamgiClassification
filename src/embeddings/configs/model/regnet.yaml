@@ -1,0 +1,7 @@
+backbone:
+  name: regnet
+  class_name: torchvision.models.regnet_y_400mf
+  params:
+    weights: DEFAULT
+    freeze_up_to: -3
+    embedding_num: 512

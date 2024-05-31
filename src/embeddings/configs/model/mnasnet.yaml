@@ -1,0 +1,7 @@
+backbone:
+  name: mnasnet
+  class_name: torchvision.models.mnasnet0_5
+  params:
+    weights: DEFAULT
+    freeze_up_to: -3
+    embedding_num: 512

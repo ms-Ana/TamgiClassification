@@ -1,0 +1,19 @@
+defaults:
+  - _self_
+  - model:  resnet18
+  - trainer: default_trainer
+  - training: default_training
+  - loss: triplet
+  - optimizer: adamw
+  - scheduler: plateau
+  - callbacks: callbacks
+  - data: data
+  - augmentation: basic_augs
+
+
+general:
+  save_dir: runs/
+  workspace: anastasia
+  project_name: tamgi
+  resume_from_checkpoint: #/home/ana/University/Tamgi/saved_models1/shufflenet_v2_x0_5_epoch=09-val_rmap=0.6940-val_loss=0.8958.ckpt
+  device: cuda

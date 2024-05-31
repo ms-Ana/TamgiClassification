@@ -1,0 +1,70 @@
+train:
+  augs:
+  - class_name: albumentations.VerticalFlip
+    params:
+      p: 0.2
+  - class_name: albumentations.HorizontalFlip
+    params:
+      p: 0.2
+  - class_name: albumentations.Rotate
+    params:
+      p: 0.2
+  - class_name: albumentations.Sharpen
+    params:
+      p: 0.2
+  - class_name: albumentations.Blur
+    params:
+      p: 0.2
+  - class_name: albumentations.GaussNoise
+    params:
+      p: 0.2
+  - class_name: albumentations.ColorJitter
+    params:
+      p: 0.2
+  - class_name: albumentations.RGBShift
+    params:
+      p: 0.2
+  - class_name: albumentations.RandomBrightnessContrast
+    params:
+      p: 0.2
+  - class_name: albumentations.Resize
+    params:
+      height: ${data.height}
+      width: ${data.width}
+      p: 1.0
+  - class_name: albumentations.Normalize
+    params:
+      mean:
+        - 0.485
+        - 0.456
+        - 0.406
+      std:
+        - 0.229
+        - 0.224
+        - 0.225
+      p: 1.0
+  - class_name: albumentations.pytorch.transforms.ToTensorV2
+    params:
+      p: 1.0
+
+val:
+  augs:
+    - class_name: albumentations.Resize
+      params:
+        height: ${data.height}
+        width: ${data.width}
+        p: 1.0
+    - class_name: albumentations.Normalize
+      params:
+        mean:
+          - 0.485
+          - 0.456
+          - 0.406
+        std:
+          - 0.229
+          - 0.224
+          - 0.225
+        p: 1.0
+    - class_name: albumentations.pytorch.transforms.ToTensorV2
+      params:
+        p: 1.0

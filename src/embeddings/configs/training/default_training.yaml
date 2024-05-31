@@ -1,0 +1,7 @@
+lr: 0.0001
+metric: val_rmap
+mode: max
+seed: 42
+debug: True
+embedding_size: 512
+input_size: 299

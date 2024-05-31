@@ -1,0 +1,6 @@
+name: arcface
+class_name: utils.ArcFaceLoss
+params:
+  device: cuda
+  embedding_size: ${training.embedding_size}
+  num_classes: 6

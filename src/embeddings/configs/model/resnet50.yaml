@@ -1,0 +1,7 @@
+backbone:
+  name: resnet50
+  class_name: torchvision.models.resnet50
+  params:
+    weights: ResNet50_Weights.IMAGENET1K_V2
+    freeze_up_to: -3
+    embedding_num: ${training.embedding_size}

@@ -1,0 +1,7 @@
+backbone:
+  name: resnet18
+  class_name: torchvision.models.resnet18
+  params:
+    weights: DEFAULT
+    freeze_up_to: #
+    embedding_num: ${training.embedding_size}
